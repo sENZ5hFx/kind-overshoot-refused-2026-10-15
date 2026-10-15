@@ -1,0 +1,100 @@
+{
+  "discovery_id": "CLOSED-2026-10-15 Kind-Overshoot not minted",
+  "timestamp": "2026-10-15T17:40:00Z",
+  "author": "Haley Ann Bird",
+  "agent": "Grok by xAI (non-ownership)",
+  "status": "NOT_MINTED",
+  "not_a_physical_discovery": true,
+  "not_a_patent": true,
+  "residual_GtC": 1.7,
+  "residual_source": "Friedlingstein et al. Global Carbon Budget 2025 preprint, year-2024 BIM = -1.7 GtC yr^-1. Preprint landing text retrieved. PDF of that preprint was not opened. Sign is negative. Magnitude inherited from RSC-2026-10-11.",
+  "specimen_source": "Doney et al., Global Biogeochemical Cycles (2024), doi:10.1029/2024GB008156. EPIC PDF bytes retrieved and text-extracted. SHA-256 769aea72923af7c7929e9b21d70a84686ba45d7f2fd6b89aaf1c0a0820cc7b96. Figure whiskers not digitized. A Wiley index line says corrected 15 Nov 2025; that note was not in the extracted text.",
+  "pairs": [
+    {
+      "study": "Henson et al. 2012",
+      "f100": 4.0,
+      "f1000": 0.66,
+      "te": 0.19,
+      "product": 0.76,
+      "gap": 0.1
+    },
+    {
+      "study": "DeVries and Weber 2017",
+      "f100": 7.3,
+      "f1000": 1.1,
+      "te": 0.13,
+      "product": 0.949,
+      "gap": -0.151
+    },
+    {
+      "study": "Nowicki et al. 2022",
+      "f100": 6.4,
+      "f1000": 1.1,
+      "te": 0.15,
+      "product": 0.96,
+      "gap": -0.14
+    }
+  ],
+  "primary": {
+    "score": 0.0,
+    "verdict": "AXIS_DOES_NOT_CLOSE",
+    "intact_side": null,
+    "stripped_side": null,
+    "identity_gaps": [
+      0.1,
+      -0.151,
+      -0.14
+    ]
+  },
+  "illegal_column_glance": {
+    "intact_side": -1,
+    "stripped_side": 1,
+    "would_look_like_a_flip": true,
+    "official_score": 0,
+    "why_illegal": "Printed F100 times printed E1000/100 does not recover printed F1000. The axis the class would delete does not close, so the columns are not one rectangle."
+  },
+  "controls": {
+    "std_window_published": {
+      "score": 0.0,
+      "verdict": "SUPPORT_NOT_CLOSED_PAIRS",
+      "intact_side": null,
+      "stripped_side": null,
+      "identity_gaps": null
+    },
+    "mcmonagle_straddle": {
+      "score": 0.0,
+      "verdict": "STRADDLE",
+      "intact_side": -1,
+      "stripped_side": 0,
+      "identity_gaps": [
+        0.0,
+        0.0
+      ]
+    },
+    "land_sink_straddle": {
+      "score": 0.0,
+      "verdict": "GATE",
+      "intact_side": null,
+      "stripped_side": null,
+      "identity_gaps": null
+    },
+    "visser_extract": {
+      "score": 0.0,
+      "verdict": "GATE",
+      "intact_side": null,
+      "stripped_side": null,
+      "identity_gaps": null
+    },
+    "residual_0.61_same_side_if_identity_ignored": {
+      "intact_side": 1,
+      "stripped_side": 1,
+      "note": "Both sides above 0.61. Even an illegal column glance does not flip."
+    }
+  },
+  "score": 0,
+  "novelty_capped": 0,
+  "coherence": 0.9,
+  "leftover_still_queued": "Kind-Overshoot",
+  "mint_condition_added": "Every paired row must satisfy F1000 = F100 * E1000/100 within 0.02 PgC before any sign is read. mean\u00b1STD is not support. Unread box-whisker outliers are not members. Visser 2025 remains an extract.",
+  "open_interval_if_identity_had_closed": "(1.1, 4.0) PgC. 1.7 sits inside. 0.61 does not."
+}
